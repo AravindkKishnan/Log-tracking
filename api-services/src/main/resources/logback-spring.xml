@@ -1,0 +1,24 @@
+<configuration>
+
+    <appender name="KAFKA" class="com.github.danielwegener.logback.kafka.KafkaAppender">
+        <topic>app-logs</topic>
+        <producerConfig>bootstrap.servers=localhost:9092</producerConfig>
+        <encoder>
+            <pattern>%level|%msg|%date{yyyy-MM-dd HH:mm:ss}</pattern>
+            
+        </encoder>
+    </appender>
+    
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+        <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+    </encoder>
+</appender>
+
+    <root level="INFO">
+        <appender-ref ref="KAFKA"/>
+          <appender-ref ref="CONSOLE"/>
+    </root>
+    <logger name="org.apache.kafka" level="OFF"/>
+
+</configuration>
