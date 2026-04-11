@@ -20,7 +20,7 @@ function Ui() {
       <table border="1" cellPadding="10">
         <thead>
           <tr>
-            <th>ID</th>
+            <th>ID</th> 
             <th>Level</th>
             <th>Message</th>
             <th>Timestamp</th>
