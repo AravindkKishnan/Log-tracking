@@ -16,8 +16,8 @@ public class LogEntity {
 
     @Column(length = 5000)
     private String message;
-    private String level;      // INFO, ERROR
-    private String service;    // Which service logged it
+    private String level;      
+    private String service;  
     private LocalDateTime timestamp;
 
 	public LogEntity() {

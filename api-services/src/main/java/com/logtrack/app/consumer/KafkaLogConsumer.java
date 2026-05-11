@@ -1,3 +1,4 @@
+
 package com.logtrack.app.consumer;
 
 import java.time.LocalDateTime;
@@ -45,4 +46,3 @@ public class KafkaLogConsumer {
     }
 	}
 }	 
-
